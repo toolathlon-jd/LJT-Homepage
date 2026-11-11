@@ -12,9 +12,9 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Junteng Liu"
 title_separator          : "-"
 name                     : &name "Junteng Liu"
-description              : &description "Personal homepage of Junteng Liu, first-year PhD candidate at the HKUST NLP Group."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Personal homepage of Junteng Liu, first-year PhD candidate at the HKUST NLP Group."   # General description of the site, used as the default if not overridden by a page
 url                      : https://toolathlon-jd.github.io # The base hostname & protocol for your site
-baseurl                  : "/LJT-Homepage" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/LJT-Homepage" # the subpath of your site
 repository               : "toolathlon-jd/LJT-Homepage"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -33,7 +33,7 @@ author:
 
   # Academic websites
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : # URL
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
   inspire-hep      : # URL
   impactstory      : # URL
@@ -47,7 +47,7 @@ author:
 
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
   github           : "Vicent0205"
@@ -170,9 +170,12 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .devcontainer
   - .github
   - .jekyll-assets-cache
   - .sass-cache
+  - AGENTS.md
+  - README.md
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
@@ -180,16 +183,22 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
   - tmp
   - vendor
 keep_files:
